@@ -764,7 +764,7 @@
         ]
     };
     myChart1.setOption(provinces);
-    myChart1.on("click", function (params) { //点击事件
+    myChart1.on("click", function (params) {
         let countryname=params.name;
         $.ajax({
             url:"http://api.worldbank.org/v2/countries?per_page=304&format=json",
